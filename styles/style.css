@@ -16,6 +16,15 @@
 	margin-right:auto;
 }
 
+#title {
+	text-align: left;
+	margin-left: 10%;
+}
+
+input {
+	width: 80%;
+}
+
 div.name {
 	font-family: "Arial";
 	text-align: left;
