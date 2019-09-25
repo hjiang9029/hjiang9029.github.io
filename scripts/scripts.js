@@ -38,8 +38,8 @@ function addPerson() {
 	deleteBtn.type = "button";
 	deleteBtn.appendChild(document.createTextNode("Delete"));
 	deleteBtn.onclick = function () { deleteButton(this); };
+	deleteBtn.className = "delButton";
 	buttonCell.appendChild(deleteBtn);
-
 }
 
 function deleteButton(btn) {
