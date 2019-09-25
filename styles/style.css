@@ -8,6 +8,14 @@
 	margin-left: 33%;
 }
 
+#form {
+	text-align:center;
+	padding-bottom: 10px;
+	width: 33%;
+	margin-left: 33%;
+	display: none;
+}
+
 #directory {
 	border-style: solid;
 	border-width: 1px;

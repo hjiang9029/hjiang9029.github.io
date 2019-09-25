@@ -1,79 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Lab 02</title>
+	<title>Lab 03</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="./styles/style.css">
+	<script type="text/javascript" src="./scripts/scripts.js" ></script>
 </head>
-<body>
-		<div id="search">
-			<h2 id="title">Artist Directory</h2>
-			<input type="text">
+<body onload="formStart()">
+	<div id="search">
+		<h2 id="title">Artist Directory</h2>
+		<input type="text">
+		<button type="button" onClick="showForm()">Add</button>
+	</div>
+	<div id="form">
+		<div>
+			<input type="text" placeholder="Artist Name" id="art_name">
+			<input type="text" placeholder="About artist" id="art_about">
+			<input type="text" placeholder="Image URL" id="img_url">
 		</div>
+		<button type="button" onClick="addPerson()">Add</button>
+	</div>
 	<table id="directory">
 		<tr>
 			<td>
 				<img src="https://randomuser.me/api/portraits/med/women/1.jpg">
 			</td>
 			<td>
-			<div class="name">
-				Barot Bellingham
-			</div>
-			<div class="description">
-				Royal Academy of Painting and Sculpture
-			</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<img src="https://randomuser.me/api/portraits/med/men/1.jpg">
+				<div class="name">
+					Barot Bellingham
+				</div>
+				<div class="description">
+					Royal Academy of Painting and Sculpture
+				</div>
 			</td>
 			<td>
-			<div class="name">
-				Barot Bellingham2
-			</div>
-			<div class="description">
-				Electric Boogaloo
-			</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<img src="https://randomuser.me/api/portraits/med/women/2.jpg">
-			</td>
-			<td>
-			<div class="name">
-				Barot Bellingham
-			</div>
-			<div class="description">
-				Royal Academy of Painting and Sculpture
-			</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<img src="https://randomuser.me/api/portraits/med/men/2.jpg">
-			</td>
-			<td>
-			<div class="name">
-				Barot Bellingham
-			</div>
-			<div class="description">
-				Royal Academy of Painting and Sculpture
-			</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<img src="https://randomuser.me/api/portraits/med/women/3.jpg">
-			</td>
-			<td>
-			<div class="name">
-				Barot Bellingham
-			</div>
-			<div class="description">
-				Royal Academy of Painting and Sculpture
-			</div>
+				<button type="button" onClick="deleteButton(this)"> Delete </button>
 			</td>
 		</tr>
 	</table>
