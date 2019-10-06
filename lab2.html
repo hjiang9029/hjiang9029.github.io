@@ -9,8 +9,11 @@
 <body onload="formStart()">
 	<div id="search">
 		<h2 id="title">Artist Directory</h2>
-		<input type="text">
-		<button type="button" onClick="showForm()">Add</button>
+		<div>
+		<input type="text" id="searchBar">
+		<button type="button" onClick="showForm()" class="topButtons">Add</button>
+		<button type="button" onClick="Search()" class="topButtons">Search</button>
+		</div>
 	</div>
 	<div id="form">
 		<div>
@@ -18,24 +21,8 @@
 			<input type="text" placeholder="About artist" id="art_about">
 			<input type="text" placeholder="Image URL" id="img_url">
 		</div>
-		<button type="button" onClick="addPerson()">Add</button>
+		<button type="button" onClick="addPersonDoc()" class="topButtons">Add</button>
 	</div>
 	<table id="directory">
-		<tr>
-			<td>
-				<img src="https://randomuser.me/api/portraits/med/women/1.jpg">
-			</td>
-			<td>
-				<div class="name">
-					Barot Bellingham
-				</div>
-				<div class="description">
-					Royal Academy of Painting and Sculpture
-				</div>
-			</td>
-			<td>
-				<button type="button" onClick="deleteButton(this)" class="delButton"> Delete </button>
-			</td>
-		</tr>
 	</table>
 </body>
